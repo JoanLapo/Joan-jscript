@@ -1,9 +1,11 @@
-function ParPositivo (numero){
+function Rango (min, max, numero) {
 
-    return numero >= 0 && numero % 2 === 0; 
+    return numero >= min && numero <= max
 }
-const numero = prompt("ingrese su número");
+const min = parseInt (prompt ("Dime min"))
+const max = parseInt (prompt ("Dime max"))
+const numero = parseInt (prompt ("Dime numero")) 
 
-const numeroConvertido = Number(numero);
-
-console.log(ParPositivo(numeroConvertido));
+if (numero >= min && numero <= max)
+    console.log ("Está en el rango")
+else (console.log ("No está en el rango"))
